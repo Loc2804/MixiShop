@@ -1,0 +1,15 @@
+.privacy{
+    padding: 50px 150px;
+    .top-title{
+        margin-bottom: 20px;
+    }
+    .title-body{
+        font-size: 30px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+}

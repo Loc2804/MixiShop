@@ -1,0 +1,57 @@
+.content-left{
+    margin-top: 40px;
+    border-right: 2px solid #ccc;
+    margin-right: 50px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 16px;
+    .title-left{
+        .title-up{
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+    .menu-info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .menu{
+            cursor: pointer;
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+}
+
+.content-right{
+    margin-top: 40px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .title-change-password{
+        color: black;
+        font-weight: 400;
+    }
+    .title-right{
+        display: flex;
+        justify-content: space-between;
+        .title-left{
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+    .info-user{
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .title-bill{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}

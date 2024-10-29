@@ -1,0 +1,52 @@
+.title-popular-brand{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.brand-container{
+    margin: 50px 0;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    .brand-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        .brand-img{
+            width: 170px;
+            height: 170px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &.spr-sum{
+                background-image: url('../../../assets/brand/season_coll_1_img_large.webp');
+            }
+            &.aut-win{
+                background-image: url('../../../assets/brand/season_coll_3_img_large.webp');
+            }
+            &.lego{
+                background-image: url('../../../assets/brand/season_coll_5_img_large.webp');
+            }
+            &.cup{
+                background-image: url('../../../assets/brand/season_coll_4_img_large.webp');
+            }
+            &.shoe{
+                background-image: url('../../../assets/brand/season_coll_6_img_large.webp');
+            }
+            &.sou{
+                background-image: url('../../../assets/brand/season_coll_7_img_large.webp');
+            }
+        }
+        .brand-title{
+            color:#474747;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        &:hover{
+            transform: scale(1.1); /* Phóng to item lên 1.2 lần khi hover */
+        }
+    }
+}

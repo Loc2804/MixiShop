@@ -1,0 +1,20 @@
+.service-page{
+    padding: 50px 150px;
+    .title-body{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+    .title-footer{
+        margin-top: 40px;
+        span{
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    }
+}

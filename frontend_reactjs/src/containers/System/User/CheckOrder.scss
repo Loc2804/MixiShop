@@ -1,0 +1,38 @@
+.container-check-order{
+    height: 450px;
+    width:1000px;
+    margin: 50px 200px;
+    display: flex;
+    gap: 30px;
+    color: white;
+    .capcha-form{
+        height: 100%;
+        width:400px;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;    
+        background-color:#57b6e2;
+        gap:30px;
+        .title-check-order{
+            text-align: center;
+            font-size: 17px;
+            i{
+                padding-right: 10px;
+            }
+        }
+        .g-recaptcha{
+            width: 100% !important;
+        }
+        .contact-label{
+            b{
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .label-result{
+        color: black;
+    }
+}

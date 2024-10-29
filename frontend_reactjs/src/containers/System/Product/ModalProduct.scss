@@ -1,0 +1,39 @@
+.modal{
+    position: fixed !important;
+    z-index: 1000000 !important;
+}
+.modal-backdrop {
+    z-index: 999999 !important; 
+}
+.product-modal-container{
+    z-index: 1000000 !important;
+    .content-product-order{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .img-product-order{
+            width: 200px;
+            height: 150px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .name-price-product-order{
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            .name-product-order{
+           
+            }
+            .price-product-order{
+                color: blue;
+            }
+        }
+        
+        .quantity-product-order{
+            font-size: 20px;
+            color: red;
+        }
+    }
+}

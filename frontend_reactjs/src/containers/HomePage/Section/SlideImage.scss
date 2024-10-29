@@ -1,0 +1,93 @@
+.slide-content {
+    height:500px;
+    width:1200px;
+    margin:0 auto;
+    .slide-img{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 500px;
+        width: 100%;
+    }
+}
+
+.slick-prev{
+    left: 5px !important;
+    z-index: 50 !important;
+    height: 48px !important;
+    width: 44px !important;
+    background: #fff !important;
+    border: 2px solid #d7d7d7 !important;
+    border-radius: 50% !important;
+    &:hover{
+        background-color: #eceaea !important;
+    }
+}
+
+.slick-prev:before , 
+.slick-next:before{
+    font-family: FontAwesome  !important;
+    color: black !important;
+    // content: "\e257" !important;
+}
+
+.slick-next{
+    right: 5px !important;
+    z-index: 50 !important;
+    height: 48px !important;
+    width: 44px !important;
+    background: #fff !important;
+    border-radius: 50% !important;
+    border: 2px solid #d7d7d7 !important;
+    &:hover{
+        background-color: #eceaea !important;
+    }
+}
+.slick-next:before{
+    font-family: FontAwesome  !important;
+    color: black !important;
+    // content: "\e258" !important;
+}
+
+.slick-disabled{
+    display:none !important;
+}
+
+.item-intro{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    .menu{
+        display: flex;
+        gap:10px;
+        .logo-menu{
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height:40px;
+            width: 40px;
+            &.menu-ship{
+                background-image: url('../../../assets/icon/policies_icon_1.webp');
+            }
+            &.menu-dis{
+                background-image: url('../../../assets/icon/policies_icon_2.webp');
+            }
+            &.menu-qual{
+                background-image: url('../../../assets/icon/policies_icon_3.webp');
+            }
+            &.menu-hotline{
+                background-image: url('../../../assets/icon/policies_icon_4.webp');
+            }
+        }
+        .name{
+            display: flex;
+            flex-direction: column;
+            .label-content{
+                font-weight: 600;
+            }
+            .detail-content{
+                color: #7d7e80;
+            }
+        }
+    }
+}

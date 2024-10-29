@@ -1,0 +1,88 @@
+.contact-content{
+    height: 700px;
+    margin: 50px 0;
+    display: flex;
+    .content-right{
+        height:100%;
+    }
+    .content-left{
+        height: 100%;
+        .content-up{
+            border-bottom: 1px solid #ddd;
+            .title-content{
+                padding: 20px 0;
+                font-size: 30px;
+            }
+            .info{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                i{
+                    font-size: 15px;
+                    padding-right: 10px;
+                }
+                .phone{
+                    i{
+                        margin-right: 5px;
+                    }
+                    span{
+                        &:hover{
+                            color: blue;
+                        }
+                        cursor: pointer;
+                    }
+                }
+                .address{
+                    i{
+                        margin-right: 3px;
+                    }
+                    
+                }
+                .email{
+                    span{
+                        &:hover{
+                            color: blue;
+                        }
+                        cursor: pointer;
+                    }
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .content-down{
+            padding-top: 20px;
+            .title-down{
+                text-transform: uppercase;
+                font-size: 17px;
+                color: #7e7a7a;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            .body-content{
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+                input{
+                    height: 40px;
+                }
+                textarea{
+                    height:130px;
+                }
+                button{
+                    background-color: #080808;
+                    color: #ddd;
+                    height: 50px;
+                    &:hover{
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.css-df17o1{
+    position: fixed !important;
+    z-index: 1000000 !important;
+}

@@ -1,0 +1,267 @@
+.home-header-page{
+    height: 100px;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    border-bottom:1px solid #ccc ;
+    background-color: #fff;
+    .row{
+        height: 100%;
+        .logo{
+            height: 100%;
+            .img{
+                height: 100px;
+                background: url('../../assets/logo.webp') center center no-repeat;
+                width: 150px;
+                background-size: contain;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+        }
+        .search-info {
+            .input-search{
+                display: flex;
+                position: relative;
+                input{
+                    border-radius: 20px;
+                    border: 1px solid black;
+                    height: 40px;
+                }
+                margin-bottom: 5px;
+                .icon-search{
+                    position: absolute;
+                    right: 5px;
+                    top:2px;
+                    font-size: 20px;
+                    color: #fff;
+                    height: 35px;
+                    width: 50px;
+                    border-radius: 20px;
+                    background-color: black;
+                    font-weight: 100;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+            }
+            padding-top: 20px;
+            label{
+                color: #ccc;
+            }
+        }
+        .info{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            gap:30px;
+            align-items: center;
+            font-size: 15px;
+            span{
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .pro{
+                display: flex;
+                gap:5px;
+                align-items: center;
+                position: relative;
+
+                .logo-pro{
+                    height: 100px;
+                    background: url('../../assets/menu_icon_3.png') center center no-repeat;
+                    width: 20px;
+                    background-size: contain;
+                }
+                .menu-pro{
+                    display: none;
+                    width: 230px;
+                    position: absolute;
+                    top: 60px; /* Đặt vị trí menu ngay bên dưới user */
+                    left: 10px;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    
+                    .child-menu{
+                        padding: 5px 10px;
+                        font-size: 15px;
+                        &:hover{
+                            color: rgb(40, 138, 218);
+                        }
+                    }
+                }
+                &:hover{
+                    .menu-pro{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .item{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+            i{
+                font-size: 17px;
+                cursor: pointer;
+            }
+            .user{
+                position: relative;
+                .menu-user{
+                    width: 100px;
+                    display: none;
+                    background-color: rgb(49, 48, 48);
+                    color: white;
+                    .item-user{
+                        cursor: pointer;
+                        padding: 5px 5px;
+                        &:hover{
+                            background-color: #cccccc;
+                        }
+                    }
+
+                    position: absolute;
+                    top: 25px; /* Đặt vị trí menu ngay bên dưới user */
+                    left: -30px;
+                    border: 1px solid gray;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                    .triangle{
+                        position: absolute;
+                        top: -10px; /* Đặt nó ngay trên menu */
+                        left: 25px; /* Điều chỉnh theo vị trí mong muốn */
+                        width: 0;
+                        height: 0;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid black; /* Đặt màu tam giác giống với viền menu */
+                    }
+                }
+                &:hover{
+                    .menu-user{
+                        display: block;
+                    }
+                }
+            }
+            .bag{
+                position: relative;
+                .bag-item{
+                    position: absolute;
+                    right:-7px;
+                    top:-7px;
+                    height: 15px;
+                    width: 15px;
+                    background-color: red;
+                    border-radius: 50%;
+                    color: white;
+                    text-align: center;
+                    font-size: 12px;
+                }
+                .menu-cart-list{
+                    display: none;
+                    position: absolute;
+                    top:17px;
+                    right:-10px;
+                    width: 470px;
+                    min-height: 50px;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    border-radius: 15px;
+                    .title-cart-list{
+                        text-align: center;
+                        padding-top: 10px;
+                        font-size: 17px;
+                        font-weight: 500;
+                        &.special{
+                            color: rgb(40, 138, 218);
+                        }
+                    }
+                    .cart-item{
+                        margin-bottom: 10px;
+                        display: flex;
+                        gap:10px;
+                        align-items: center;
+                        border-bottom: 1px solid #ccc;
+                        padding: 10px;
+                        justify-content: space-between;
+                        .rmv-cart-item{
+                            color: red;
+                            cursor: pointer;
+                        }
+                        .img-cart-item{
+                            height: 70px;
+                            width: 100px;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                        .name-cart-item{
+                            color: black;
+                            font-weight: 500;
+                            font-size: 17px;
+                        }
+                        .quantity-cart-item{
+                            display: flex;
+                            flex-direction: column;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 17px;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .action-cart-item{
+                            display: flex;
+                            flex-direction: column;
+                            i{
+                                cursor: pointer;
+                                color: black;
+                            }
+                        }
+                    }
+                    .all-cart-item{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-bottom: 10px;
+                        .btn-all-cart-item{
+                            width: 200px;
+                            height: 50px;
+                            background-color:rgb(40, 138, 218);
+                            color: white;
+                            font-size: 17px;
+                            &:hover{
+                                opacity: 0.8;
+                            }
+                        }
+                    }     
+                }
+                &:hover{
+                    .menu-cart-list{
+                        display: block;
+                    }
+                }
+            }
+            .whitelist{
+                position: relative;
+                .white-list-item{
+                    position: absolute;
+                    right:-7px;
+                    top:-7px;
+                    height: 15px;
+                    width: 15px;
+                    background-color: red;
+                    border-radius: 50%;
+                    color: white;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

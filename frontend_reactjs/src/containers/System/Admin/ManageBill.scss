@@ -1,0 +1,30 @@
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.btn-ship{
+    color: green;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+.btn-complete{
+    color: orange;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+.btn-detail{
+    color: blue;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+.btn-paid{
+    color: red;
+    &:hover{
+        opacity: 0.8;
+    }
+}

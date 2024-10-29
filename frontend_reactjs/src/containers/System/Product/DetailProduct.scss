@@ -1,0 +1,185 @@
+.detail-product-container{
+    margin-top: 20px;
+    .content-left-product{
+        .frm-img-product{
+            cursor: pointer;
+            .frm-detail-product{
+                height: 700px;
+                width: 100%;
+                background: url('../../../assets/product/frame_1.webp') center center no-repeat;
+                background-size: contain;
+                position: relative;
+                z-index: 10;
+            }
+            .img-detail-product{
+                position: absolute;
+                top: 30px; /* Đặt vị trí từ phía trên khung */
+                left: 15px; /* Đặt vị trí từ bên trái khung */
+                height: 650px; /* Đặt chiều cao hình ảnh bằng với chiều cao khung */
+                width: 90%; /* Đặt chiều rộng hình ảnh bằng với chiều rộng khung */
+                object-fit: cover; /* Đảm bảo hình ảnh vừa khít khung mà không bị méo */
+                background-size: contain; /* Đảm bảo hình ảnh bao phủ toàn bộ khung */
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 1;
+            }
+        }
+    }
+    .content-right-product{
+        padding: 20px 30px;
+        .detail-product-info{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            .detail-product-name{
+                font-size: 25px;
+            }
+            .detail-product-code{
+                display: flex;
+                gap:10px;
+                .special-name{
+                    color: #155BF6;
+                }
+            }
+            .detail-product-price{
+                font-size: 20px;
+                color: #155BF6;
+            }
+            .love-detail-product{
+                height: 20px;
+                width: 150px;
+                background: url('../../../assets/promo_tag_3.webp') center center no-repeat;
+                background-size: contain;
+                position: relative;
+            }
+            .detail-product-sale{
+                padding-top: 30px;
+                padding-bottom: 10px;
+                border: 1px dashed blue;
+                font-size: 16px;
+                border-radius: 5px;
+                margin-top: 20px;
+                position: relative;
+                .img-title-sale{
+                    width: 230px;
+                    position: absolute;
+                    top:-15px;
+                    left:30px;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    .img-sale{
+                        height: 30px;
+                        width: 30px;
+                        background: url('../../../assets/icon-product-promotion.webp') center center no-repeat;
+                        background-size: contain;
+                        position: relative;
+                    }
+                    .title-sale{
+                        color: #155BF6;
+                    }
+                }
+            }
+            .detail-product-size{
+                .detail-product-size-title{
+                    display: flex;
+                    gap:20px;
+                    margin-bottom: 5px;
+                    .title-size{
+                        font-size: 17px;
+                    }
+                    .title-count{
+                        font-size: 17px;
+                        color: #155BF6;
+                    }
+                }
+                .btn-size{
+                    border: 1px solid #ccc;
+                    outline: none;
+                    margin-right: 5px;
+                    &.active{
+                        background-color: #ccc;
+                    }
+                }
+            }
+            .btn-general{
+                width: 150px;
+                height: 50px;
+                font-size: 17px;
+                &.btn-order{
+                    border: 1px solid #7895fa;
+                    color: #7895fa;
+                    &:hover{
+                        background-color: #7895fa;
+                        color: white;
+                    }
+                }
+            }
+            .detail-product-hotline{
+                padding-bottom: 10px;
+                font-size: 17px;
+                text-align: center;
+                border-bottom: 1px dashed #ccc;
+                span{
+                    cursor: pointer;
+                    &:hover{
+                        color: #155BF6;
+                    }
+                }
+            }
+            .detail-product-intro{
+                display: flex;
+                gap: 10px;
+                justify-content: space-between;
+                .intro-product{
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    .img-intro{
+                        height: 30px;
+                        width: 30px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        &.intro-1{
+                            background-image: url('../../../assets/icon/policy_product_image_1.webp') ;
+                        }
+                        &.intro-2{
+                            background-image: url('../../../assets/icon/policy_product_image_2.webp') ;
+                        }
+                        &.intro-3{
+                            background-image: url('../../../assets/icon/policy_product_image_3.webp') ;
+                        }
+                    }
+                    .title-intro{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .detail-product-policy{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .product-policy{
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #ccc;
+                    cursor: pointer;
+                }
+                .ship-product{
+                    font-size: 18px;
+                    color: #155BF6;
+                }
+                .return-product{
+                    font-size: 18px;
+                    color: #155BF6;
+                }
+            }
+        }
+    }
+}
