@@ -60,5 +60,3 @@ cd ../frontend_reactjs
 npm install
 npm start
 ```
-
-## DEMO
